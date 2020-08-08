@@ -11,5 +11,8 @@ def home(request):
     return render(request,"myapp/home.html")
 
 def profile(request):
-    name="akshay"
+    name="jyothi"
     return render(request,"myapp/profile.html",{'name':name})
+
+def orders(request):
+    return render(request,"myapp/orders.html")

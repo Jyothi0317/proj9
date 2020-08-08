@@ -1,4 +1,14 @@
 h1{
-    color: blueviolet;
-    font-family: arial;
+    color: darkorange;
+    font-family: broadway;
+    background-color: purple;
+    height:80px;
+    width: 70%;  
+}
+
+h3{
+    font-family: cursive;
+}
+body{
+    background-color: rgb(66, 4, 82);
 }
