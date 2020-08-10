@@ -14,5 +14,13 @@ def profile(request):
     name="jyothi"
     return render(request,"myapp/profile.html",{'name':name})
 
-def orders(request):
-    return render(request,"myapp/orders.html")
+def get_demo(request):
+    name=request.GET.get('name')
+    return render(request,"get_demo.html",{'name':name})
+
+def post_demo(request):
+    if request.method=="POST":
+        name=request.POST.get('name')
+        return HttpResponse("<h1>{}'s form submitted</h1>".format(name))
+    return render(request,"post_demo.html")
+
